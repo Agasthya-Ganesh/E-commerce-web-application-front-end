@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: var(--main-bg-color);
+    /* we set height to nav itself cz it occupies the header area */
+}
+
+nav {
+    display: flex;
+    height: 12vh;
+}
+
+.logoo {
+    display: flex;
+    align-items: center;
+}
+
+.logoo img {
+    width: 6vw;
+    padding: 0 1.62vw;
+}
+
+nav ul {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 1vw;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+
+}
+
+nav .search {
+    display: flex;
+    align-items: center;
+
+}
+
+nav .search input {
+    width: 32vw;
+    height: 6vh;
+    border-radius: 4px;
+    margin: 0 0.8vw 0 8vw;
+    padding: 0 1vw;
+}
+
+
+
+
+
+
+.container {
+    min-height: calc(100vh - 12vh - 12vh);
+
+}
+
+.slider {
+
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+}
+
+.img0 {
+    transform: translate(10vw);
+    width: 500vw;
+    animation: slider0 8s ease-in-out 3s backwards;
+    /* animation: 6s linear 3s infinite running slidein; */
+}
+
+.img1 {
+    transform: translate(20vw);
+     width: 500vw;
+     animation: slider1 8s ease-in-out 3s backwards;
+     /* animation: 6s linear 3s infinite running slidein; */
+}
+
+.img2 {
+    transform: translate(30vw);
+     width: 500vw;
+     animation: slider2 8s ease-in-out 3s backwards;
+     /* animation: 6s linear 3s infinite running slidein; */
+}
+
+.img3 {
+    transform: translate(40vw);
+    width: 500vw;
+    animation: slider3 8s ease-in-out 3s backwards ;
+    /* animation: 6s linear 3s infinite running slidein; */
+}
+
+@keyframes slider0 {
+    0% {
+        transform: translate(10vw);
+    }
+
+    50% {
+        transform: translate(-17vw);
+    }
+    100%{
+        transform: translate(10vw);
+    }
+
+}
+
+@keyframes slider1 {
+    0% {
+        transform: translate(20vw);
+    }
+
+    50% {
+        transform: translate(-14vw);
+    }
+    100%{
+        transform: translate(20vw);
+    }
+
+}
+
+@keyframes slider2 {
+    0% {
+        transform: translate(30vw);
+    }
+
+    50% {
+        transform: translate(-7vw);
+    }
+    100%{
+        transform: translate(30vw);
+    }
+
+}
+
+@keyframes slider3 {
+    0% {
+        transform: translate(40vw);
+    }
+
+    50% {
+        transform: translate(1vw);
+    }
+    100%{
+        transform: translate(40vw);
+    }
+
+}
+
+.card-items {
+    display: inline-flex;
+
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-items img {
+
+    width: 16vw;
+}
+
+.diffcard {
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: "Lato", sans-serif;
+}

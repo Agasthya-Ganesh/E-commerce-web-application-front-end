@@ -1,0 +1,25 @@
+@media screen and (max-width:600px) {
+    body {
+        background-color:white;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logoo {
+        justify-content: center;
+    }
+
+    .logoo img {
+        margin-top: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .search {
+        justify-content: center;
+    }
+}

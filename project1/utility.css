@@ -1,0 +1,26 @@
+.All-text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color:white;
+    padding: 0.6vh 0.6vw;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid white;
+    font-family:  "Lato", sans-serif;
+}
+
+.btn:hover{
+    background-color: #2874f0;
+    font-weight: bold;
+    color: white;
+}
+.all-list-item{text-align: center;}
+
+
+
+.mar{margin: 2vh 0;}
+.mardiffcard{margin: 0 1vw;}
